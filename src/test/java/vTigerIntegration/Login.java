@@ -19,7 +19,10 @@ public void validlogin(){
 	    driver.findElement(By.name("login_theme")).sendKeys("blue");
 	    driver.findElement(By.name("Login")).click();
 	    System.out.println("Login successfully");
-	    driver.findElement(By.name("Log out")).click();
+	    driver.findElement(By.linkText("Logout")).click();
 	    System.out.println("logout successfully");
+	    driver.close();
+	    driver.quit();
+	    
 }
 }
